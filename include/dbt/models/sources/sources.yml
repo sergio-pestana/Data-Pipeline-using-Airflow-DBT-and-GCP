@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: retail
+    database: nba-api-pipeline
+
+    tables:
+      - name: raw_invoices
+      - name: country

@@ -1,0 +1,14 @@
+data_source retail:
+  type: bigquery
+  connection:
+    account_info_json_path: /usr/local/airflow/include/gcp/service_account.json
+    auth_scopes:
+    - https://www.googleapis.com/auth/bigquery
+    - https://www.googleapis.com/auth/cloud-platform
+    - https://www.googleapis.com/auth/drive
+    project_id: 'nba-api-pipeline'
+    dataset: retail
+soda_cloud:
+  host: cloud.us.soda.io
+  api_key_id: 905f379d-138b-4b32-846b-5f6d6117aa19
+  api_key_secret: buPUWXt0IttRjO-mTd2zdrgGMEMVpDRsuLQ71GvGXLfnsHgoU4zYTQ
